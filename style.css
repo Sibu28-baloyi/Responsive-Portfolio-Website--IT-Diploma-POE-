@@ -1,0 +1,490 @@
+body {
+    background-color: antiquewhite;
+    color: black;
+}
+
+footer {
+    background-color: antiquewhite;
+    color: black;
+    text-align: center;
+    padding: 10px;
+}
+
+.container {
+    max-width: 960px; /*Sets a maximum width for the content area*/
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.main-content {
+    line-height: 1.6; /*Improve readbility by spacing out the lines of text*/
+}
+
+header {
+    background-color: #f5f5dc;
+    padding: 0px;
+    display: flex; /*Aligns grey backgroud*/
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+header a {
+    text-decoration: none; /*Removes the underline from links*/
+    color: black;
+    padding: 10px 15px;
+    margin: 0 5px;
+    font-weight: bold;
+}
+
+header a:hover {
+    background-color: #e0e0e0; /*Changes background color on hover*/
+}
+
+header img {
+    height: 98px;
+    width: 180px;
+    margin-right: 0px;
+    box-shadow: 0 0px 1px;
+    border-radius: 60px;
+}
+
+h2 {
+    font-family: 'Georgia', serif;
+    color: #333;
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Georgia', serif;
+    height: 10px;
+    box-shadow: 0 ;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+ 
+/*Footer styling*/
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    margin-top: 2px;
+}
+
+/*Main container layout*/
+.container {
+    display: flex;
+    padding: 20px;
+    gap: 20px; /*Provides space between the main content and sidebar*/
+}
+
+.main-content {
+    flex: 3; /*The main content takes up more space*/
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px;
+}
+
+/* Div bar */
+div a {
+    background-color: antiquewhite;
+    text-align: center;
+    padding: 3px 5px;
+    color: black;
+    display: block;
+    border-radius: 10px;
+    box-shadow: 0 1px;
+    
+}
+
+div {
+    list-style-type: none;
+    margin: 5px;
+    padding: 0;
+    display: flex;
+    box-shadow: 0 1px;
+    justify-content: center; /* Centers navigation links */
+}
+
+p {
+    font-family: Arial, sans-serif; /*Sets the font*/
+    font-size: 16px; /*Sets font size*/
+    line-height: 1.6; /*Adds spacing between lines*/
+}
+
+h1 {
+    color: black;
+    font-family: Georgia, serif; /*Sets the font*/
+}
+
+.container {
+    max-width: 960px; /*Limits the width of the container*/
+    margin: 0 auto; /*Centers the container on the page*/
+}
+
+.secondary-content {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border: 1px solid #ccc; /*Add a border*/
+    border-radius: 20px;
+    box-shadow: 0 1px 2px white lightblue;
+}
+
+.third-content {
+    background-color: #e9e9e9; /*Another background color*/
+    padding: 15px;
+    border-radius: 15px;
+}
+
+.five-content {
+    background-color: #e0e0e0;
+}
+
+.secondary-content p {
+    color: #555; /*Makes the text a bit darker*/
+    font-style: italic; /*Makes the text italic*/
+}
+
+.main-body {
+    background-color: antiquewhite;
+    color: black;
+}
+
+.main-footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+/*Styling for the main contact container*/
+main {
+    display: flex; /*Use flexbox for layout*/
+    flex-direction: column; /*Stacks the children vertically by default*/
+    align-items: center; /*Centers the content horizontally*/
+    gap: 30px; /*Adds space between the sections*/
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+/*Base styles for all content boxes*/
+.contact-info, .schedule {
+    background-color: #fff;
+    border-radius: 18px;
+    box-shadow: 1 10px 22px rgba(0,0,0,0.1);
+    padding: 30px;
+    width: 100%;
+}
+
+
+/*Adjust to make the contact info and schedule side-by-side on larger screens*/
+@media (min-width: 768) {
+    main {
+        flex-direction: row; /*Arranges children horizontally*/
+        justify-content: space-between; /*Distributes space between the sections*/
+        align-items: flex-start; /*Aligns items to the top*/
+    }
+    .contact-info, .schedule {
+        width: 48; /*Each section takes up about half the width*/
+    }
+    
+}
+
+/*Common styles for all headings in these sections*/
+.contact-info h2, .schedule h2 {
+   font-family: 'Time New Roman', Times, serif;
+   color: #5d4037;
+   border-bottom: 2px solid #a1887f;
+   padding-bottom: 5px;
+   margin-top: 0;
+   margin-bottom: 15px;
+}
+
+/*Common styles for all paragraphs*/
+.contact-info p, .schedule p {
+    font-size: 1em;
+    color: #666;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+/*Styling the navigation container*/
+.nav-bar {
+    background-color: #5d4037;
+    padding: 15px 0;
+    text-align: center;
+}
+
+/*Styling the individual links*/
+.nav-bar a {
+    color: #333;
+    text-decoration: none; /*Removes the underline*/
+    font-weight: bold;
+    padding: 1px 2px;
+    transition: background-color 0.3s ease; /*Smooth hover effect*/
+    border-radius: 10px;
+}
+
+/*Hover effect for links*/
+.nav-bar a:hover {
+    background-color: #7b5e57; /*Lighter shade on hover*/
+}
+
+.container {
+    background-color: #ffffff; /*Sets the background of the container to white*/
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1); /*Adds a soft shadow*/
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.secondary-content {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-left: 5px solid #a1887f;
+    margin-bottom: 20px;
+}
+
+.third-content {
+    background-color: #fcf7e3;
+    padding: 20px;
+    border: 1px dashed #d7ccc8; /*Adds a dashed border*/
+    border-radius: 8px;
+}
+
+/*Styling for the details summary in third-content*/
+.third-content summary {
+    font-weight: bold;
+    cursor: pointer;
+    color: black;
+    list-style: none; /*Removes the default arrow*/
+}
+
+/*Adds a custom arrow or icon*/
+.third-content details summary ::before {
+    content: ">";
+    display: inline-block;
+    margin-right: 10px;
+    transition: transform 0.2s ease;
+}
+
+/*Rotates the arrow when the detailes are open*/
+.third-content details[open] summary ::before {
+    transform: rotate(90deg);
+}
+
+/*For the headings*/
+h1, h2 {
+    font-family: 'Time New Roman', Times, serif;
+    color: #333;
+}
+
+/*Styling for the footer*/
+footer {
+    background-color: #5d4037;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+/*Import a custom font from Google fonts (or use a similar service)*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Playfair+Display:wght@700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #444; /*Darker text for better readability*/
+    background-color: #fafafa;
+}
+
+h1, h2 {
+    font-family: 'playfair Display', serif;
+    color: #333;
+    margin-bottom: 0.5em;
+}
+
+.bakery-logo {
+    max-width: 100%;
+    display: block; /*Removes any extra space below the image*/
+    border-radius: 100px;
+}
+
+/*General container for the service page*/
+.service-container {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 50px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/*Styling for the form container*/
+.form-container {
+    max-width: 700px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+/*Styling for the form's descriptive note*/
+.form-note {
+    font-style: italic;
+    color: #888;
+    margin-top: 5px;
+}
+
+/*Styling the form groups*/
+.form-group {
+    margin-bottom: 15px;
+}
+
+/*Styling for all labels*/
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+/*Styling for all input and textarea fields*/
+input[type="text"],
+input[type="email"]
+input[type="tel"]
+textarea {
+    width: 100%;
+    padding: 5px;
+    border: 5px solid #ccc;
+    font-size: 1em;
+    text-align: left;
+    border-radius: 20px;
+    align-items: normal;
+}
+
+/*Styling for the submit button*/
+.submit-btn {
+    background-color: #a1887f;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #7b5e57;
+}
+
+.service-container h1 {
+    font-size: 2em;
+    border-radius: 5px;
+    color: black;
+    
+}
+
+.service-container p {
+    background-color: #888;
+    color: black;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px;
+    border: 2px 3px;
+}
+
+/*Styling for the overall menu table container*/
+.menu-table-container {
+    width: 100%;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    overflow: hidden; /*Ensures borders are rounded*/
+}
+
+/*Styling the table*/
+table {
+    width: 100%;
+    border-collapse: collapse; /*Removes specing between table cells*/
+}
+
+/*Styling the table header and data cells*/
+th, td {
+    text-align: left;
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+/*Styling the table header*/
+th {
+    background-color: #5d4037;
+    color: #fff;
+    font-weight: bold;
+}
+
+/*Styling every other row for better readability (zebra stripes)*/
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/*Styling for product items*/
+.product-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/*Styling for product images*/
+.product-image {
+    max-width: 150px;
+    height: auto;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+/*Styling for product prices*/
+.product-price {
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #a1887f;
+}
+
+/*Styling for the summary and details section*/
+details {
+    margin-top: 5px;
+}
+
+summary {
+    cursor: pointer;
+    font-weight: 600;
+    color: #5d4037;
+    list-style-type: none; /*Hides the default arrow*/
+}
+
+/*Add a custom icon for summary*/
+summary::before {
+  content: "+ ";
+  color: blue;
+}
+
+details[open] summary::before {
+    content: "- ";
+}
+
+/*Styling for the ingredients list*/
+.ingredients {
+    margin-top: 5px;
+    font-size: 0.9em;
+    color: #666;
+}
+
